@@ -2,7 +2,7 @@
 
 A real-time YouTube watch party application that allows multiple users to join a room and watch videos in sync using WebSockets.
 
-**Live Demo:** [text](https://youtube-watch-party-frontend.onrender.com/)
+**Live Demo:** [URL](https://youtube-watch-party-frontend.onrender.com/)
 
 ---
 
@@ -70,5 +70,17 @@ The server enforces role-based permissions and synchronization consistency.
 ### Clone the Repository
 
 ```bash
-git clone <REPO_URL>
-cd <PROJECT_FOLDER>
+git clone https://github.com/atulrawat-2002/YouTube-Watch-Party.git
+cd YouTube-Watch-Party
+
+## starting frontend
+cd client
+npm install
+set VITE_BACKEND_URL=http://localhost:3000
+npm run dev
+
+## starting backend server
+cd server
+npm install
+set PORT=3000
+npm run dev
